@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/vsapiens/compilers-design/Tarea_3.2/token"
+	"Users/vsapiens/Documents/compilers-design/Tarea_3.2/token"
 )
 
 type ErrorSymbol interface {

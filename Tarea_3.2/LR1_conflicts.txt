@@ -1,5 +1,0 @@
-1 LR-1 conflicts: 
-	S15
-		symbol: }
-			Reduce(12:Estatutos : Estatuto	<<  >>)
-			Reduce(13:Estatutos : empty	<<  >>)
