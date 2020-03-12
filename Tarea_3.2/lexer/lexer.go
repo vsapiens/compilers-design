@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"unicode/utf8"
 
-	"Users/vsapiens/Documents/compilers-design/Tarea_3.2/token"
+	"github.com/vsapiens/compilers-design/Tarea_3.2/token"
 )
 
 const (

@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	parseError "Users/vsapiens/Documents/compilers-design/Tarea_3.2/errors"
-	"Users/vsapiens/Documents/compilers-design/Tarea_3.2/token"
+	parseError "github.com/vsapiens/compilers-design/Tarea_3.2/errors"
+	"github.com/vsapiens/compilers-design/Tarea_3.2/token"
 )
 
 const (

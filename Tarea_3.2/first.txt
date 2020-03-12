@@ -1,0 +1,88 @@
+S': {
+	program
+}
+Programa: {
+	program
+}
+Vars: {
+	var
+}
+Args: {
+	id
+}
+Tipo: {
+	float
+	int
+}
+Ids: {
+	id
+}
+Bloque: {
+	{
+}
+Estatutos: {
+	empty
+	id
+	if
+	print
+}
+Estatuto: {
+	id
+	if
+	print
+}
+Asignacion: {
+	id
+}
+Expresion: {
+	(
+	+
+	-
+	cteF
+	cteI
+	id
+}
+Escritura: {
+	print
+}
+Exp: {
+	(
+	+
+	-
+	cteF
+	cteI
+	id
+}
+Termino: {
+	(
+	+
+	-
+	cteF
+	cteI
+	id
+}
+Factor: {
+	(
+	+
+	-
+	cteF
+	cteI
+	id
+}
+Varcte: {
+	cteF
+	cteI
+	id
+}
+Condicion: {
+	if
+}
+Expresiones: {
+	(
+	+
+	-
+	cteF
+	cteI
+	cteS
+	id
+}
