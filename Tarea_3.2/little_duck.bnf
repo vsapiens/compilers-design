@@ -1,0 +1,50 @@
+!ws : ' ' | '\t' | '\n' | '\r' ;
+_alpha : 'A'-'Z' | 'a'-'z';
+_digit : '0'-'9' ;
+cteI : _digit {_digit} ;
+cteF : _digit {_digit} '.' _digit {_digit} ;
+cteS: '"'{ _alpha | _digit | ' ' } '"';
+id : _alpha { { _alpha } | { _digit } } ;
+
+var : 'v' 'a' 'r';
+if : 'i' 'f';
+else : 'e' 'l' 's' 'e';
+print : 'p' 'r' 'i' 'n' 't';
+int : 'i' 'n' 't';
+float : 'f' 'l' 'o' 'a' 't';
+program : 'p' 'r' 'o' 'g' 'r' 'a' 'm';
+relop: '>' | '<' | '<''>';
+
+Programa : program id ":" Vars Bloque | program id ":" Bloque;
+
+Vars : var Args ;
+
+Args : Ids ":" Tipo ";" | Ids ":" Tipo ";";
+
+Tipo : int | float;
+
+Ids : id "," Ids | id;
+
+Bloque : "{" Estatutos "}";
+
+Estatutos : Estatuto Estatutos | Estatuto | empty;
+
+Estatuto : Asignacion | Condicion | Escritura;
+
+Asignacion : id "=" Expresion;
+
+Expresion : Exp relop Exp;
+
+Escritura : print "(" Expresiones ")" ";";
+
+Exp: Termino "+" Termino | Termino "-" Termino;
+
+Termino : Factor "*" Factor | Factor "/" Factor;
+
+Factor : "(" Expresion ")" | "-" Varcte | "+" Varcte | Varcte ;
+
+Varcte : id | cteI | cteF;
+
+Condicion : if "(" Expresion ")" Bloque ";" | if "(" Expresion ")" Bloque else Bloque ";";
+
+Expresiones : Expresion "," Expresiones | cteS "," Expresiones | Expresion | cteS;
