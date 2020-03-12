@@ -1,10 +1,11 @@
+
 !ws : ' ' | '\t' | '\n' | '\r' ;
 _alpha : 'A'-'Z' | 'a'-'z';
 _digit : '0'-'9' ;
 cteI : _digit {_digit} ;
 cteF : _digit {_digit} '.' _digit {_digit} ;
 cteS: '"'{ _alpha | _digit | ' ' } '"';
-id : _alpha { { _alpha } | { _digit } } ;
+id : _alpha { _alpha | _digit} ;
 
 var : 'v' 'a' 'r';
 if : 'i' 'f';
